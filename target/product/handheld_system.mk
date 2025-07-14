@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     android.software.window_magnification.prebuilt.xml \
     BasicDreams \
     BlockedNumberProvider \
-    Bluetooth \
     BluetoothMidiService \
     BookmarkProvider \
     BuiltInPrintService \

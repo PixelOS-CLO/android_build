@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     kcmdlinectrl \
     kcmdlinemodprobe \
     keystore2 \
+    credstore \
     ld.mc \
     libaaudio \
     libalarm_jni \
@@ -218,6 +219,7 @@ PRODUCT_PACKAGES += \
     libvintf_jni \
     libvulkan \
     libwilhelm \
+    llkd \
     llndk_libs \
     lmkd \
     LocalTransport \
@@ -232,8 +234,6 @@ PRODUCT_PACKAGES += \
     mediaextractor \
     media_profiles_V1_0.dtd \
     mediaserver \
-    mediaserver64 \
-    mediaserverwrapper \
     mke2fs \
     mkfs.erofs \
     mm_daemon \
@@ -273,6 +273,7 @@ PRODUCT_PACKAGES += \
     screencap \
     sdcard \
     secdiscard \
+    SecureElement \
     selinux_policy_system \
     sensorservice \
     service \
