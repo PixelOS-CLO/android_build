@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
 
 # Default AOSP sounds
-ifeq ($(LINEAGE_BUILD),)
+ifeq ($(or $(LINEAGE_BUILD),$(CUSTOM_BUILD)),)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 endif
 
@@ -45,7 +45,7 @@ endif #TARGET_IS_QLMD
 
 # Telephony:
 #   Provide a APN configuration to GSI product
-ifeq ($(LINEAGE_BUILD),)
+ifeq ($(or $(LINEAGE_BUILD),$(CUSTOM_BUILD)),)
 PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 endif
