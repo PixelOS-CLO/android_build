@@ -1372,6 +1372,7 @@ ifneq ($(wildcard device/lineage/sepolicy/common/sepolicy.mk),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
 $(eval include device/lineage/sepolicy/common/sepolicy.mk)
+$(eval include device/custom/sepolicy/sepolicy.mk)
 endif
 endif
 
